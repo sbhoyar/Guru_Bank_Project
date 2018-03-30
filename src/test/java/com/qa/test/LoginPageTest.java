@@ -6,11 +6,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.qa.base.Base;
+import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
 
 public class LoginPageTest extends Base {
 
 	public LoginPage loginPageObject;
+	public HomePage homePageObject;
 
 	public LoginPageTest() {
 		super();
@@ -20,6 +22,7 @@ public class LoginPageTest extends Base {
 	public void setUp() {
 		initialization();
 		loginPageObject = new LoginPage();
+		homePageObject = new HomePage();
 	}
 
 	@Test(priority = 1)
@@ -42,7 +45,7 @@ public class LoginPageTest extends Base {
 	
 	@Test(priority=4)
 	public void loginClickTest() {
-	  loginPageObject.loginClick();
+	  homePageObject= loginPageObject.validateLoginClick();
 	}
 	
 	@AfterMethod

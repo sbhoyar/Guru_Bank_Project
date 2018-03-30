@@ -49,7 +49,7 @@ public class LoginPage extends Base {
 		Boolean actualImage= loginImage.isDisplayed();
 		return actualImage;
 	}
-	public HomePage loginClick() { // Click Button Method
+	public HomePage validateLoginClick() { // Click Button Method
 		username.sendKeys(prop.getProperty("username"));
 		password.sendKeys(prop.getProperty("password"));
 		loginButton.submit();

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Guru99 Bank Automation Suite">
+	<test name="Guru 99 Automation Test">
+		<classes>
+			<class name="com.qa.test.HomePageTest"></class>
+			<class name="com.qa.test.LoginPageTest"></class>
+		</classes>
+	</test>
+</suite>
